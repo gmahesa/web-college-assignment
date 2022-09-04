@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Latihan html</title>
+     <script type="text/javascript">
+
+     function hasil(){
+        var var1 = document.kirim.orang.value ;
+        var var2 = document.kirim.penjualan.value ;
+	        if(parseInt(var1) < 10 )
+                var3 = parseInt(var2) * 5/100;
+            else if(parseInt(var1) >= 10 && orang <= 50)
+                if(parseInt(var2) < 1000000 )
+                    var3 = parseInt(var2) * 10/100;
+                else
+                    var3 = parseInt(var2) * 12.5/100;
+            
+            else
+                var3 = parseInt(var2) * 15/100;
+            
+	    document.getElementById("hasil_proses").innerHTML=var3;
+    }
+   
+     
+     </script>
+</head>
+<body>
+        <form name="kirim" method="GET">
+        <table align="center">
+                <tr>
+                    <td>Input Jumlah Orang</td>
+                    <td>:</td>
+                    <td colspan="2"><input type="text" name="orang"></td>
+                </tr>
+                <tr>
+                    <td>Jumlah Penjualan</td>
+                    <td>:</td>
+                    <td colspan="2"><input type="text" name="penjualan"></td>
+                </tr>
+                <td><input type="button" name="" onclick="hasil(this)" value="Submit"></td>
+                
+                <tr align="center">
+                    <td colspan="4"><div id="hasil_proses"></div></td>
+                </tr>
+                
+            </table>
+
+</form>
+</body>
+</html></script>
+
+

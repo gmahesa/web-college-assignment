@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+
+
+	
+}
+ 	
+	function penjumlahan(){
+	var var1 = document.kirim.angka1.value ;
+	var var2 = document.kirim.angka2.value ;
+	var3= parseInt(var1) + parseInt(var2);
+	document.getElementById("hasil_proses").innerHTML=var3;
+}
+
+	function perkalian(){
+	var var1 = document.kirim.angka1.value ;
+	var var2 = document.kirim.angka2.value ;
+	var3= parseInt(var1) * parseInt(var2);
+	document.getElementById("hasil_proses").innerHTML=var3;
+}
+	function pengurangan(){
+	var var1 = document.kirim.angka1.value ;
+	var var2 = document.kirim.angka2.value ;
+	var3= parseInt(var1) - parseInt(var2);
+	document.getElementById("hasil_proses").innerHTML=var3;
+}
+	function pembagian(){
+	var var1 = document.kirim.angka1.value ;
+	var var2 = document.kirim.angka2.value ;
+	var3= parseInt(var1) / parseInt(var2);
+	document.getElementById("hasil_proses").innerHTML=var3;
+}	
+
+
+</script>
+</head>
+<body>
+<form name="kirim" method="GET">
+<table align="center">
+	<tr>
+		<td>Masukkan Angka 1</td>
+		<td>:</td>
+		<td colspan="2"><input type="text" name="angka1"></td>
+	</tr>
+		<tr>
+		<td>Masukkan Angka 2</td>
+		<td>:</td>
+		<td colspan="2"><input type="text" name="angka2"></td>
+	</tr>
+	<tr align="center">
+		<td><input type="button" name="" onclick="penjumlahan(this)" value="+"></td>
+		<td><input type="button" name="" onclick="pengurangan(this)" value="-"></td>
+		<td><input type="button" name="" onclick="perkalian(this)" value="*"></td>
+		<td><input type="button" name="" onclick="pembagian(this)" value="/"></td>
+	</tr>
+	
+	<tr align="center">
+		<td colspan="4"><div id="hasil_proses"></div></td>
+	</tr>
+	
+</table>
+</form>
+</body>
+</html>

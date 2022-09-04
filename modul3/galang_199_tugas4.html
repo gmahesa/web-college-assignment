@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <script type="text/javascript" src="jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#tombol1").click(function(){
+				$("#kotak").width("300px");
+				$("#kotak").height("300px");
+			});
+			$("#tombol2").click(function(){
+			var nilai = $("#kotak").width();
+			alert(nilai);
+			});
+			$("#tombol3").click(function(){
+				$(".background").css("background-color", "blue");
+			});
+			$("#tombol4").click(function(){
+				$(".background").css("background-color", "white");
+				$("#kotak").width("100px");
+				$("#kotak").height("100px");
+				alert("reset success");
+			});
+		});
+	</script>
+</head>
+<body class="background" style="background-color: white">
+		<div id="kotak" style="background-color: pink; width: 100px; height: 100px;">
+			Hello
+		</div>
+		<p>
+			<button id="tombol1">ubah ukuran kotak</button>
+			<button id="tombol2">ambil nilai ukuran kotak</button>
+			<button id="tombol3">ubah warna background</button>
+			<button id="tombol4">reset</button>
+		</p>
+		
+</body>
+</html>

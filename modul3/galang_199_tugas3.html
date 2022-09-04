@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script language="javascript">
+	function cek (){
+		var val1 = document.kirim.T1.value;
+		if (val1%2==0) {
+			document.kirim.T2.value="bilangan genap";
+		} else {
+			document.kirim.T2.value="bilangan ganjil";
+		}
+	}
+</script>
+<body>
+	<form method="POST" name="kirim">
+		<p>bilangan <input type="text" name="T1" size="20"></p>
+		<p>merupakan bilangan <input type="text" name="T2" size="20"></p>
+		<p> <input type="button" value="Tebak" name="B1" onclick="cek()"></p>
+	</form>
+</body>
+</html>
